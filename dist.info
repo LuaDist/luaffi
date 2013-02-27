@@ -1,0 +1,29 @@
+type = "x86_64"
+arch = "Ubuntu"
+author = "James R. McKaskill"
+depends = {
+[[lua ~> 5.1]],
+}
+
+desc = "Lua is a powerful, fast, light-weight, embeddable scripting language."
+version = "1.0-work1"
+maintainer = "Peter Drahoš"
+files = {
+Runtime = {
+[[lib/lua/ffi.so]],
+}
+,
+Data = {
+[[share/luaffi/README.md]],
+}
+,
+Test = {
+[[share/luaffi/test/libtest_cdecl.so]],
+[[share/luaffi/test/test.lua]],
+}
+,
+}
+
+license = "MIT/X11"
+name = "luaffi"
+url = "https://github.com/jmckaskill/luaffi"
